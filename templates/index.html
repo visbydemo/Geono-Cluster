@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Explainable Cluster Modelsn</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/style_menu.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/style_visual.css" type="text/css" />
+
+    <link rel="stylesheet" href="static/lib/jqueryUI/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="static/css/bootstrap2-toggle.min.css"> -->
+    <link rel="stylesheet" href="static/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="static/css/jquery.contextMenu.min.css">
+
+    <!-- libraries -->
+    <script type="text/javascript" src="static/lib/d3/d3.v3.min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+    <script type="text/javascript" src="static/lib/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="static/lib/lasso.js"></script>
+    <script type="text/javascript" src="static/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/lib/bootstrap2-toggle.min.js"></script>
+    <script type="text/javascript" src="static/lib/jqueryUI/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="static/lib/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="static/lib/socket.io.min.js"></script>
+    <script type="text/javascript" src="static/lib/jquery.contextMenu.min.js"></script>
+    <script type="text/javascript" src="static/lib/jquery.csv.min.js"></script>
+
+
+</head>
+
+<body class="body">
+
+    <div id="headBar">
+        <div id="titlePanel">
+            <h1 class="titleText" id="titleContent">EXCLUSTER : explaining cluster models </h1>
+        </div>
+        <div id="iconPanel">
+            <!-- <div class="iconHolder" id="addTestButton" onclick="main.loadTestData()" title="Load Test Data">
+                <img class="imgIcon" src="static/img/icons/loadData.png"> </div>
+            <div class="iconHolder" id="barShowButton" onclick="appModel.loadAppMode()" title="Show Bars">
+                <img class="imgIcon" src="static/img/icons/application.png"> </div> -->
+            <div class="iconHolder" id="printButton" onclick="Main.printLogs()" title="Show logs">
+                <img class="imgIcon" src="static/img/icons/print.png"> </div>
+
+        </div>
+    </div>
+
+    <div id="bottomBar">
+        <div id="sidePanel">
+            <div id="leftPanel">
+                <div id="auxSideMenuBar">
+                    <div id="auxSideTop">
+                        <div class="iconHolderSideMenu" id="attrP" onclick="Menu.toggleLeftPanel()" title="Toggle Panel">
+                            <img class="imgIcon" src="static/img/icons/three_bar.png"> </div>
+                        <!-- <div class="iconHolderSideMenu" id="miniV" onclick="menu.changeToInstanceView()" title="Instance View">
+                            <img class="imgIcon" src="static/img/icons/stacked_bar.png"> </div>
+                        <div class="iconHolderSideMenu" id="modelS" onclick="menu.changeToModelView()" title="Model View">
+                            <img class="imgIcon" src="static/img/icons/model_selection.png"> </div> -->
+
+                    </div>
+
+                </div>
+
+
+                <div id="leftPanelContent">
+                    <div id="featurePanel"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="viewPanel">
+            <div id="modelPanel">
+                <div id="clusterDivSvg"></div>
+            </div>
+            <div id="tablePanel">
+                <div id="tableSelectors"></div>
+                <div id="tableContent"></div>
+
+            </div>
+
+
+        </div>
+        <div id="sideRightPanel">
+            <!-- <div id="auxSideMenuBar">
+                <div id="auxSideTop">
+                    <div class="iconHolderSideMenu" id="attrP" onclick="menu.toggleRightPanel()" title="Attribute Panel">
+                        <img class="imgIcon" src="static/img/icons/resize_right.png"> </div>
+                    <div class="iconHolderSideMenu" id="miniV" onclick="menu.changeToMinimap()" title="Minimap View">
+                        <img class="imgIcon" src="static/img/icons/stacked_bar.png"> </div>
+                    <div class="iconHolderSideMenu" id="modelS" onclick="menu.changeToModelSelect()" title="Model Selection ">
+                        <img class="imgIcon" src="static/img/icons/model_selection.png"> </div>
+
+                </div>
+             
+            </div> -->
+            <div id="sideRightContentPanel">
+                <div id="globalPanel"></div>
+                <!-- <div id="featurePanel"></div> -->
+                <div id="gridDataPanel"></div>
+            </div>
+        </div>
+    </div>
+    <!--scripts-->
+    <script src="static/js/Main.js"></script>
+    <script src="static/js/Utilities.js"></script>
+
+    <script src="static/js/DataTable.js"></script>
+    <script src="static/js/ClusterModeler.js"></script>
+    <script src="static/js/LocalInfoCluster.js"></script>
+    <script src="static/js/Metrics.js"></script>
+    <script src="static/js/Menu.js"></script>
+    <script src="static/js/ClusterOthers.js"></script>
+    <script src="static/js/GridData.js"></script>
+    <script type="text/javascript">
+        Main.init();
+    </script>
+</body>
+
+</html>

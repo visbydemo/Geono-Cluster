@@ -1,0 +1,89 @@
+/*model preview container*/
+#modelPanelContainerId{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.iconHolder{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.iconHolder:hover {
+    background-color: #00BCD4;
+}
+
+
+.iconHolderBig{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.iconHolderSideMenu:hover{
+     background-color: #00BCD4;
+}
+
+
+
+.iconHolderSideMenu{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.iconHolderMiniTopMenu{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.iconText{
+    display: block;
+    width: 200px;
+    vertical-align: middle;
+    color: white;
+}
+
+#iconPanel{
+    display: flex;
+}
+
+#loadingPage{
+    width: 100%;
+    height: 100%
+}
+
+
+
+.imgIcon{
+    width: 70%;
+    height: 70%;
+}
+
+
+
+
+.constInstRow:hover{
+    background: #f7f7f7;
+}
